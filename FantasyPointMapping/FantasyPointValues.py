@@ -19,9 +19,8 @@ class DefensiveProduction:
 	points_per_safety = 2
 	points_per_block_kick = 2
 	points_per_kickoff_PR_touchdowns = 6
-	points_per_points_allowed = create_defensive_points_allowed_array
 
-	def create_defensive_points_allowed_array:
+	def create_defensive_points_allowed_array(self):
 		create_defensive_points_allowed_array = [None] * 35
 		for x in range(0, 36):
 			if (x == 0): 
@@ -39,22 +38,24 @@ class DefensiveProduction:
 			if (x > 27 and x < 35):
 				create_defensive_points_allowed_array[x] = -4
 
+
+	points_per_points_allowed = create_defensive_points_allowed_array
+
 class KickingProduction:
-	field_goal_lengths = create_field_goal_point_array
 
-	points_per_PAT_made = 1
-
-
-	def create_field_goal_point_array:
+	def create_field_goal_point_array(self):
 		field_goal_lengths = [None] * 51
 		for x in range(0, 51):
 			if (x < 39):
 				field_goal_lengths[x] = 3
-			else if (x > 39 and x <50):
+			elif (x > 39 and x <50):
 				field_goal_lengths[x] = 4
-			else if (x > 49):
+			elif (x > 49):
 				field_goal_lengths[x] = 5
 
 		return field_goal_lengths
 
+	points_per_PAT_made = 1
+
+	field_goal_lengths = create_field_goal_point_array
 
