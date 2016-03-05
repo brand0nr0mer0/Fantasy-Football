@@ -1,1 +1,1 @@
-n/a 
+Crawls nfl stat sites for player and team data

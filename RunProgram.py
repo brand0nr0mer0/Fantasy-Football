@@ -1,9 +1,9 @@
-import FantasyPointCategories
-import FootballWebsiteDataScripts.WebsiteAccessors
+import fantasypointcategories
+import FootballWebsiteDataScripts.websiteaccessors
 
 def main():
 	print "hello"
-	points = FantasyPointCategories.OffensiveProduction()
+	points = fantasypointcategories.OffensiveProduction()
 	points.passingyards = 10
 	print points.passingyards
 
