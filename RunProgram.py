@@ -1,5 +1,5 @@
 import FantasyPointCategories
-imp.load_source()
+import FootballWebsiteDataScripts.WebsiteAccessors
 
 def main():
 	print "hello"
@@ -8,4 +8,4 @@ def main():
 	print points.passingyards
 
 if __name__ == '__main__':
-	main()	
+	main()
