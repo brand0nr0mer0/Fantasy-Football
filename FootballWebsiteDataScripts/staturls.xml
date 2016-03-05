@@ -1,0 +1,6 @@
+<Urls>
+    <base>http://www.footballdb.com</base>
+    <extensions>
+            <player>/players/players.html?letter={0}&amp;page={1}</player>
+    </extensions>
+</Urls>
